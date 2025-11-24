@@ -1,0 +1,14 @@
+import numpy as np 
+ 
+# Create a sample NumPy array 
+data = np.array([4, 13, 28, 16, 
+22, 9, 33]) 
+Define the range to filter by 
+min_val, max_val = 10, 25# 
+print("Original array:", data) 
+print(f"Filtering for numbers between {min_val} and {max_val}...") 
+ 
+# Use boolean indexing to filter values in the specified range 
+filtered_data = data[(data > min_val) & (data < max_val)] 
+ 
+print("Extracted numbers:", filtered_data)
