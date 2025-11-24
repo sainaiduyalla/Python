@@ -1,0 +1,50 @@
+class Animal: 
+def  init (self, name): 
+self.name = name 
+ 
+def eat(self): 
+print(f"{self.name} is eating.") 
+ 
+def sleep(self): 
+print(f"{self.name} is sleeping.") 
+ 
+class Dog(Animal): 
+def  init (self, name, breed): 
+super().  init (name) 
+self.breed = breed 
+ 
+def bark(self): 
+print(f"{self.name} (a {self.breed}) barks: Woof! Woof!") 
+ 
+class Cat(Animal): 
+def  init (self, name, color): 
+super().  init (name) 
+self.color = color 
+ 
+def meow(self): 
+print(f"{self.name} (a {self.color} cat) meows: Meow!") 
+class Bird(Animal): 
+def  init (self, name, species): 
+super(). init (name) 
+self.species = species 
+ 
+def fly(self): 
+print(f"{self.name} (a {self.species}) is flying high!") 
+ 
+# Demonstration 
+print("\n--- Inheritance Demonstration ---") 
+my_dog = Dog("Tyson", "Lab") my_cat = 
+Cat("Dolly", "Tabby") 
+my_bird = Bird("Travan", "Parrot") 
+ 
+my_dog.eat() 
+my_dog.bark() 
+my_dog.sleep() 
+ 
+my_cat.eat() 
+my_cat.meow() 
+my_cat.sleep() 
+ 
+my_bird.eat() 
+my_bird.fly() 
+my_bird.sleep() 
