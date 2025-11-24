@@ -1,0 +1,17 @@
+ 
+def safe_division(numerator, denominator): 
+try: 
+result = numerator / denominator 
+print(f"The result of {numerator} / {denominator} is: {result}") 
+except ZeroDivisionError: 
+print(f"Error: Cannot divide by zero! Attempted {numerator} / {denominator}") 
+except TypeError: 
+print("Error: Invalid input types. Please provide numbers.") 
+except Exception as e: 
+print(f"An unexpected error occurred: {e}") 
+ 
+# Example function calls 
+safe_division(25, 5) # Normal case 
+safe_division(15, 0) # ZeroDivisionError 
+safe_division("hello", 3)   # TypeError 
+safe_division(8, "test")  # TypeError 
